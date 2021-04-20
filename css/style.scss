@@ -1,0 +1,24 @@
+@import "./mixins";
+@import"./header";
+@import"./variables";
+@import"./helloWorld";
+@import"./episodios";
+@import"./deDondeVenimos";
+@import "./invitadxs";
+@import "./temas";
+@import "./novedades";
+@import "./footer";
+
+html {
+    scroll-behavior: smooth;
+}
+  
+* {
+    @include format-doc;
+}
+
+body {
+    line-height: 1.5;
+    color: $dark-color;
+}
+

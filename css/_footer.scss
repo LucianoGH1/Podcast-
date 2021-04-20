@@ -1,0 +1,29 @@
+.copyright {
+    font-family: $secondary-font-family;
+    text-align: center;
+    margin: $size * 2 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: $size * 2 0;
+}
+footer a {
+    color: black;
+}
+@media (min-width: 768px) {
+    .copyright {
+        width: 25%;
+    }
+    .icons {
+        width: 25%;
+    }
+    .footer {
+        height: $size * 7.5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}

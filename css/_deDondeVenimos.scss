@@ -1,0 +1,45 @@
+@import "./variables";
+@import "./mixins";
+
+.phone {
+    width: 100%;
+    position: relative;
+    bottom: $size * 4;
+
+}
+.deDondeVenimos {
+    position: relative;
+    bottom: $size * 2;
+}
+
+.deDondeVenimos h2 {
+    @include h2style;
+}
+.deDondeVenimos p {
+    font-family: $secondary-font-family;
+    margin: $size * 0.5 $size;
+}
+
+@media (min-width: 768px) {
+    .phone {
+        width: 30%;
+    }
+    .deDondeVenimos {
+        display: flex;
+        justify-content: space-evenly;
+        bottom: 0;
+    }
+    .deDonde-text {
+        width: 40%;
+    }
+    .deDonde-text h2 {
+        font-size: $size * 3;
+        margin-top: $size * 4;
+
+    }
+    .deDonde-text p {
+        margin-top: $size * 2;
+        
+    }
+}
+

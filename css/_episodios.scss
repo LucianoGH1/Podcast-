@@ -1,0 +1,35 @@
+@import "./variables";
+@import "./mixins";
+
+.episodios h2 {
+    @include h2style;
+    color: white;
+}
+.episodios-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.episodio {
+    margin: .5rem auto;
+    width: 80%;
+}
+.episodios {
+    padding: 5rem 0 8rem 0;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 4.5%, 100% 0, 100% 95%, 0 100%);
+}
+
+@media (min-width: 768px) {
+    .episodios h2 {
+        margin-left: $size * 7;
+        font-size: $size * 3;
+    }
+    .episodios-flex {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}

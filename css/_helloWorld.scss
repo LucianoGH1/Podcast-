@@ -1,0 +1,49 @@
+@import "./variables";
+@import "./mixins";
+
+.helloWorld {
+    margin-top: $size * 5;
+}
+h1 {
+    font-family: $primary-font-family;
+    margin: $size * 3 $size * 3 $size $size;
+    font-size: $size * 3;
+    font-weight: lighter;
+}
+.world {
+    text-decoration: line-through;
+}
+
+.helloWorld p {
+    font-family: $secondary-font-family;
+    margin: $size * 0.5 $size * 1.2 $size $size;
+
+}
+.button {
+    @include button;
+
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: $size * 4;
+        margin: $size * 7 0 0 $size * 7;
+    }
+    .helloWorld p {
+        width: 45%;
+        margin-left: $size * 7;
+    }
+    .punto {
+        color: $primary-color3;
+    }
+    .button {
+        width: 20%;
+        margin-left: $size * 7;
+        margin-top: $size * 4;
+    }
+    .button:hover {
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        color: white;
+    }
+
+}

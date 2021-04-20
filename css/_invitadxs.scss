@@ -1,0 +1,28 @@
+@import "./variables";
+@import "./mixins";
+
+.invitadas h2 {
+    @include h2style;
+}
+.invitadas {
+    display: flex;
+    flex-direction: column;
+
+}
+.invitada {
+    width: 100%;
+    margin: 0;
+}
+.invitadas-img {
+    line-height: 0;
+}
+
+@media (min-width: 768px) {
+    .invitadas h2 {
+        margin: $size $size * 7;
+    }
+    .invitadas-img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
